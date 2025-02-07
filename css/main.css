@@ -108,3 +108,47 @@ footer {
   margin-top: 3rem;
   border-top: 2px dashed rgb(98, 176, 210);
 }
+
+/*animation contact page*/
+div {
+  background-color: powderblue;
+  width: 100px;
+  height: 100px;
+  margin-left: 110px;
+  margin-top: 20px;
+  border-radius: 100%;
+  animation-name: shake;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  /* star shape (i got it from chatgpt) */
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 60%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+@keyframes shake {
+  25% {
+    transform: scale(1.2);
+    background-color: powderblue;
+  }
+
+  50% {
+    transform: scale(2);
+    background-color: rgb(246, 184, 69);
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: rgb(230, 153, 194);
+  }
+}
